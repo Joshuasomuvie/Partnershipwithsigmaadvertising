@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Advertising — Paid Advertising Partner for Agencies & Service Providers in Nigeria</title>
+    <meta name="description"
+        content="Sigma Advertising plans, launches, and manages paid campaigns on Meta, TikTok, and Google Ads for established Nigerian businesses, and works alongside agencies and service providers through referrals, white-label delivery, or joint offers.">
+
+    <!-- Site Icon / Favicon -->
+    <link rel="icon" type="image/png" href="ADVERTISING_20260814_103143_0000(2)[1].png">
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* ==========================================================================
+           SIGMA DESIGN SYSTEM — MONOCHROME PREMIUM (BLACK & WHITE)
+           ========================================================================== */
+        :root {
+            /* Light Theme (Default) */
+            --bg-main: #FFFFFF;
+            --bg-secondary: #F8F9FA;
+            --bg-tertiary: #F1F3F5;
+            --text-primary: #0A0A0A;
+            --text-secondary: #4A4A4A;
+            --text-muted: #71717A;
+            --border-color: #E4E4E7;
+            --border-dark: #18181B;
+            --accent-black: #000000;
+            --accent-white: #FFFFFF;
+            --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            --card-shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --transition-smooth: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-heading: 'Space Grotesk', sans-serif;
+        }
+
+        [data-theme="dark"] {
+            /* Dark Theme Toggle */
+            --bg-main: #09090B;
+            --bg-secondary: #121215;
+            --bg-tertiary: #18181B;
+            --text-primary: #FAFAFA;
+            --text-secondary: #A1A1AA;
+            --text-muted: #71717A;
+            --border-color: #27272A;
+            --border-dark: #3F3F46;
+            --accent-black: #FFFFFF;
+            --accent-white: #000000;
+            --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            --card-shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Reset & Base Styling */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-heading);
+            color: var(--text-primary);
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+            font-weight: 700;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Container Layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-padding {
+            padding: 6rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 4rem 0;
+            }
+        }
+
+        /* Header / Navbar */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+            transition: var(--transition-smooth);
+        }
+
+        [data-theme="dark"] .site-header {
+            background-color: rgba(9, 9, 11, 0.85);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 76px;
+        }
+
+       .logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-mark {
+            height: 32px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2.25rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            font-size: 0.925rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-link:hover {
+            color: var(--text-primary);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        /* Buttons & CTAs */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.85rem 1.75rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+            border: 1px solid transparent;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-black);
+            color: var(--accent-white);
+            border-color: var(--accent-black);
+        }
+
+        .btn-primary:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--text-primary);
+            border-color: var(--border-dark);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--bg-tertiary);
+            transform: translateY(-2px);
+        }
+
+        .btn-sm {
+            padding: 0.55rem 1.15rem;
+            font-size: 0.875rem;
+        }
+
+        .btn-full {
+            width: 100%;
+        }
+
+        /* Theme Toggle Button */
+        .theme-toggle {
+            background: none;
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--bg-tertiary);
+        }
+
+        /* Badge / Tag */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.35rem 0.85rem;
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 50px;
+            font-size: 0.825rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .badge-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: var(--text-primary);
+        }
+
+        /* ==========================================================================
+           HERO SECTION
+           ========================================================================== */
+        .hero-section {
+            padding-top: 11rem;
+            padding-bottom: 5rem;
+            position: relative;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.08;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 2.25rem;
+            max-width: 620px;
+            line-height: 1.6;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-guarantee {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        .hero-card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2.25rem;
+            box-shadow: var(--card-shadow);
+            position: relative;
+        }
+
+        .hero-card-title {
+            font-size: 1.25rem;
+            margin-bottom: 1.25rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.85rem;
+        }
+
+        .system-pill-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+
+        .system-pill {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.85rem;
+            padding: 0.85rem;
+            background-color: var(--bg-main);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+        }
+
+        .pill-number {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.85rem;
+            background-color: var(--bg-tertiary);
+            color: var(--text-primary);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+        }
+
+        .pill-text {
+            font-size: 0.925rem;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        /* ==========================================================================
+           SECTION: THE GROWTH GAP / PROBLEM
+           ========================================================================== */
+        .problem-section {
+            background-color: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-header {
+            max-width: 720px;
+            margin-bottom: 3.5rem;
+        }
+
+        .section-header.center {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.75rem;
+        }
+
+        .problem-card {
+            background-color: var(--bg-main);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 2rem;
+            transition: var(--transition-smooth);
+        }
+
+        .problem-card:hover {
+            border-color: var(--border-dark);
+            transform: translateY(-2px);
+        }
+
+        .problem-card-icon {
+            width: 44px;
+            height: 44px;
+            background-color: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            margin-bottom: 1.25rem;
+            font-weight: 700;
+        }
+
+        .problem-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .problem-card p {
+            font-size: 0.975rem;
+            color: var(--text-secondary);
+            line-height: 1.55;
+        }
+
+        /* ==========================================================================
+           SECTION: THE SIGMA ACQUISITION SYSTEM
+           ========================================================================== */
+        .system-section {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .steps-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .step-row {
+            display: grid;
+            grid-template-columns: 80px 1fr 1.2fr;
+            gap: 2rem;
+            padding: 2.25rem;
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            align-items: center;
+            transition: var(--transition-smooth);
+        }
+
+        .step-row:hover {
+            border-color: var(--border-dark);
+        }
+
+        .step-num {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-muted);
+        }
+
+        .step-content h3 {
+            font-size: 1.35rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-content p {
+            font-size: 0.975rem;
+        }
+
+        .step-details {
+            background-color: var(--bg-main);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.25rem;
+        }
+
+        .step-details ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .step-details li {
+            font-size: 0.875rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .step-details li::before {
+            content: "—";
+            color: var(--text-muted);
+            font-weight: 700;
+        }
+
+        /* ==========================================================================
+           SECTION: WHAT WE MANAGE (END-TO-END SCOPE)
+           ========================================================================== */
+        .scope-section {
+            background-color: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .scope-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .scope-card {
+            background-color: var(--bg-main);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 1.75rem;
+        }
+
+        .scope-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .scope-card p {
+            font-size: 0.925rem;
+            color: var(--text-secondary);
+        }
+
+        /* ==========================================================================
+           SECTION: WHO THIS IS FOR (QUALIFICATION)
+           ========================================================================== */
+        .fit-section {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .fit-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .fit-card {
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .fit-card.positive {
+            background-color: var(--bg-main);
+            border-left: 4px solid var(--text-primary);
+        }
+
+        .fit-card.negative {
+            background-color: var(--bg-secondary);
+            border-left: 4px solid var(--text-muted);
+        }
+
+        .fit-card h3 {
+            font-size: 1.35rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .fit-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .fit-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 0.975rem;
+            color: var(--text-primary);
+        }
+
+        .fit-icon {
+            font-weight: 700;
+            line-height: 1;
+            margin-top: 0.2rem;
+        }
+
+        /* ==========================================================================
+           SECTION: PACKAGES & PRICING
+           ========================================================================== */
+        .pricing-section {
+            background-color: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .pricing-price {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.03em;
+        }
+
+        .pricing-period {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            display: block;
+            font-weight: 600;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.75rem;
+            margin-top: 2rem;
+        }
+
+        .pricing-card {
+            background-color: var(--bg-main);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2.25rem;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transition: var(--transition-smooth);
+        }
+
+        .pricing-card.featured {
+            border: 2px solid var(--text-primary);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background-color: var(--accent-black);
+            color: var(--accent-white);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            text-transform: uppercase;
+        }
+
+        .pricing-header h3 {
+            font-size: 1.35rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-subtitle {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            min-height: 40px;
+        }
+
+        .pricing-body {
+            flex-grow: 1;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-features {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+
+        .pricing-features li {
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+        }
+
+        .pricing-features li::before {
+            content: "✓";
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .pricing-note {
+            margin-top: 2.5rem;
+            text-align: center;
+            font-size: 0.925rem;
+            color: var(--text-muted);
+        }
+
+        /* ==========================================================================
+           SECTION: FAQ & OBJECTIONS
+           ========================================================================== */
+        .faq-section {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .faq-item {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--bg-main);
+            overflow: hidden;
+            transition: var(--transition-smooth);
+        }
+
+        .faq-question {
+            padding: 1.25rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            user-select: none;
+        }
+
+        .faq-toggle-icon {
+            font-size: 1.25rem;
+            font-family: var(--font-heading);
+            transition: var(--transition-smooth);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.25rem 1.5rem;
+            font-size: 0.975rem;
+            color: var(--text-secondary);
+            display: none;
+            line-height: 1.6;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-toggle-icon {
+            transform: rotate(45deg);
+        }
+
+        /* ==========================================================================
+           SECTION: STRATEGY CALL / CTA
+           ========================================================================== */
+        .cta-section {
+            background-color: var(--bg-secondary);
+            padding: 7rem 0;
+        }
+
+        .cta-card {
+            background-color: var(--bg-main);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 3.5rem 3rem;
+            max-width: 860px;
+            margin: 0 auto;
+            text-align: center;
+            box-shadow: var(--card-shadow);
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .cta-description {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            margin-bottom: 2.25rem;
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Footer */
+        footer {
+            padding: 4rem 0 2rem;
+            background-color: var(--bg-primary);
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-brand p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+            max-width: 320px;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* ==========================================================================
+           SECTION: ABOUT THE FOUNDER
+           ========================================================================== */
+        .founder-section {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .founder-grid {
+            display: grid;
+            grid-template-columns: 340px 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .founder-photo-wrap {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--card-shadow);
+        }
+
+        .founder-photo {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .founder-content h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .founder-content p {
+            margin-bottom: 1rem;
+        }
+
+        .founder-content p:last-of-type {
+            margin-bottom: 1.75rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.85rem;
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            gap: 0.55rem;
+        }
+
+        .social-btn svg {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 992px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero-title {
+                font-size: 2.75rem;
+            }
+
+            .problem-grid,
+            .pricing-grid,
+            .scope-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .step-row {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .fit-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .founder-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .founder-photo-wrap {
+                max-width: 320px;
+                margin: 0 auto;
+            }
+
+            .nav-links {
+                display: none;
+                /* Can be expanded into mobile drawer */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+              <a href="#" class="logo">
+                    <img src="ADVERTISING_20260814_103143_0000(2)[1].png" alt="Sigma Advertising Logo" class="logo-mark">
+                    Sigma Advertising
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="#why-paid-ads" class="nav-link">Partner Value</a></li>
+                    <li><a href="#the-system" class="nav-link">How We Deliver</a></li>
+                    <li><a href="#who-its-for" class="nav-link">Who We Help</a></li>
+                    <li><a href="#how-we-work" class="nav-link">How We Work</a></li>
+                    <li><a href="#partnership" class="nav-link">Partnership Models</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                        <span id="themeIcon">☾</span>
+                    </button>
+                    <a href="#book-call" class="btn btn-primary btn-sm">Discuss a Partnership</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <h1 class="hero-title">A Paid Advertising Partner for Agencies and Service Providers.</h1>
+                        <p class="hero-subtitle">
+                            Sigma Advertising plans, launches, and manages paid campaigns on Meta, TikTok, and
+                            Google for established Nigerian businesses. We're open to working alongside agencies
+                            and service providers who want to offer paid acquisition to their clients, turning ad
+                            spend into a more predictable flow of leads, enquiries, and customers.
+                        </p>
+                        <div class="hero-cta-group">
+                            <a href="#book-call" class="btn btn-primary">Explore a Partnership</a>
+                            <a href="#the-system" class="btn btn-secondary">See How We Deliver</a>
+                        </div>
+                        <div class="hero-guarantee">
+                            <span>✓ Full Campaign Setup</span>
+                            <span>•</span>
+                            <span>✓ Creative Direction</span>
+                            <span>•</span>
+                            <span>✓ Conversion Tracking</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-card">
+                        <h3 class="hero-card-title">The Sigma Acquisition Blueprint</h3>
+                        <div class="system-pill-list">
+                            <div class="system-pill">
+                                <span class="pill-number">01</span>
+                                <span class="pill-text">Direct-response ad creative engineered to earn Nigerian
+                                    consumer trust.</span>
+                            </div>
+                            <div class="system-pill">
+                                <span class="pill-number">02</span>
+                                <span class="pill-text">Precision Meta, TikTok & Google targeting that reaches
+                                    ready-to-buy audiences.</span>
+                            </div>
+                            <div class="system-pill">
+                                <span class="pill-number">03</span>
+                                <span class="pill-text">A conversion path: WhatsApp, landing page, or booking flow,
+                                    built to eliminate cold leads.</span>
+                            </div>
+                            <div class="system-pill">
+                                <span class="pill-number">04</span>
+                                <span class="pill-text">Continuous testing, optimization & transparent performance
+                                    reporting.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: The Growth Gap (Problem) -->
+        <section class="problem-section section-padding" id="why-paid-ads">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 class="section-title">Your Clients Want Customers. Is Paid Advertising Part of What You
+                        Deliver?</h2>
+                    <p class="section-description">
+                        Many agencies and service providers are asked about paid advertising by clients they
+                        serve for branding, web design, social media, or content. Delivering it well takes
+                        dedicated skills and ongoing attention, and not every team wants to build that in-house.
+                        Sigma can act as a specialist partner to help close that gap, and we diagnose before we
+                        prescribe a campaign, because not every business has the same problem.
+                    </p>
+                </div>
+
+                <div class="problem-grid">
+                    <div class="problem-card">
+                        <div class="problem-card-icon">01</div>
+                        <h3>Client Requests Outside Your Core</h3>
+                        <p>Clients often ask for leads and sales, not just posts and designs. When paid
+                            advertising isn't a service you deliver, those requests can go unserved or end up with
+                            another provider.</p>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-card-icon">02</div>
+                        <h3>The "Boost Post" Money Pit</h3>
+                        <p>Clients who press the "Boost Post" button without pixel tracking, dedicated audience
+                            research, conversion objectives, or a compelling offer spend money with little
+                            predictability, a gap a structured campaign system can address.</p>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-card-icon">03</div>
+                        <h3>Ads Manager Complexity</h3>
+                        <p>Meta Ads Manager, TikTok pixels, Conversions API, custom audiences, and event setup
+                            call for specialist attention that can stretch a team focused on creative, web, or
+                            content delivery.</p>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-card-icon">04</div>
+                        <h3>The Reporting Gap</h3>
+                        <p>Businesses increasingly want trackable leads and a clear line back to revenue. A
+                            specialist partner can help connect campaign activity to measurable results your
+                            clients can actually see.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: The Acquisition Engine (Approach) -->
+        <section class="system-section section-padding" id="the-system">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">How Sigma Delivers Paid Acquisition</h2>
+                    <p class="section-description">
+                        We don't just "run ads." For every business we work with, we build an integrated system
+                        that captures attention, earns trust, and guides ready-to-buy customers straight into a
+                        conversation. Every engagement follows the same discipline: research, strategy, creative,
+                        testing, optimization, and measurement, in that order.
+                    </p>
+                </div>
+
+                <div class="steps-container">
+                    <div class="step-row">
+                        <div class="step-num">01</div>
+                        <div class="step-content">
+                            <h3>Offer & Audience Architecture</h3>
+                            <p>We analyze the business's margin, customer lifetime value, and competitive landscape
+                                to package an offer that earns attention in a crowded feed.</p>
+                        </div>
+                        <div class="step-details">
+                            <ul>
+                                <li>Customer angle profiling</li>
+                                <li>Competitor research & positioning analysis</li>
+                                <li>Direct-response offer structure</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="step-row">
+                        <div class="step-num">02</div>
+                        <div class="step-content">
+                            <h3>High-Converting Creative Production</h3>
+                            <p>We craft short-form video scripts, image creative angles, and thumb-stopping hooks
+                                designed to overcome Nigerian customer skepticism.</p>
+                        </div>
+                        <div class="step-details">
+                            <ul>
+                                <li>Hook & script engineering</li>
+                                <li>UGC & visual ad production guidelines</li>
+                                <li>Angle & copy testing framework</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="step-row">
+                        <div class="step-num">03</div>
+                        <div class="step-content">
+                            <h3>Conversion Path & Funnel Integration</h3>
+                            <p>We route ad traffic into whatever converts best for the business: a WhatsApp
+                                conversation, a landing page, or a booking flow, so every click turns into a
+                                qualified enquiry.</p>
+                        </div>
+                        <div class="step-details">
+                            <ul>
+                                <li>Conversion path design (WhatsApp, landing page, or booking)</li>
+                                <li>Pixel & Conversions API tracking</li>
+                                <li>Lead qualification filtering</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="step-row">
+                        <div class="step-num">04</div>
+                        <div class="step-content">
+                            <h3>Media Buying & Scaling</h3>
+                            <p>We launch campaigns across Meta, TikTok, or Google, continuously monitoring
+                                acquisition cost, cutting what's underperforming, and scaling what converts.</p>
+                        </div>
+                        <div class="step-details">
+                            <ul>
+                                <li>Daily campaign monitoring</li>
+                                <li>Budget reallocation & scaling</li>
+                                <li>Weekly lead & performance reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Scope of Management (Capabilities) -->
+        <section class="scope-section section-padding">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 class="section-title">Everything Handled Under One Roof</h2>
+                    <p class="section-description">The business focuses on its product and its customers. Sigma
+                        handles the technical, creative, and media-buying work behind every campaign, and in a
+                        partnership, your team can stay close to the client relationship while we handle delivery,
+                        depending on the arrangement we agree.</p>
+                </div>
+
+                <div class="scope-grid">
+                    <div class="scope-card">
+                        <h4><span>•</span> Meta Ads Management</h4>
+                        <p>Complete setup and management of Facebook & Instagram sales and lead campaigns, with
+                            custom retargeting structures.</p>
+                    </div>
+
+                    <div class="scope-card">
+                        <h4><span>•</span> TikTok Ads Strategy</h4>
+                        <p>Native, creator-style TikTok campaigns built for businesses where short-form video drives
+                            discovery and trust.</p>
+                    </div>
+
+                    <div class="scope-card">
+                        <h4><span>•</span> Google Search & Search Ads</h4>
+                        <p>Capturing high-intent customers actively searching for what a business offers in
+                            Nigeria.</p>
+                    </div>
+
+                    <div class="scope-card">
+                        <h4><span>•</span> Ad Copywriting</h4>
+                        <p>Persuasive, culturally resonant ad copy that addresses trust, objections, and value
+                            clearly.</p>
+                    </div>
+
+                    <div class="scope-card">
+                        <h4><span>•</span> Technical Tracking Setup</h4>
+                        <p>Meta Pixel, TikTok Pixel, domain verification, and event tracking so you know exactly
+                            where every result originated.</p>
+                    </div>
+
+                    <div class="scope-card">
+                        <h4><span>•</span> Conversion Path Strategy</h4>
+                        <p>Structuring how ad leads move from first click to a real conversation, WhatsApp, a call,
+                            or a booking, with fast response protocols built in.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Who This Is For -->
+        <section class="fit-section section-padding" id="who-its-for">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 class="section-title">Who Sigma Helps Acquire Customers</h2>
+                    <p class="section-description">Sigma works with established businesses directly and, where it
+                        makes sense, alongside the agencies and service providers who serve them. Either way, we
+                        build long-term acquisition channels and are strictly selective about the businesses we
+                        take on.</p>
+                </div>
+
+                <div class="fit-grid">
+                    <div class="fit-card positive">
+                        <h3>Built For Businesses That Have:</h3>
+                        <ul class="fit-list">
+                            <li><span class="fit-icon">✓</span> A proven product or service with existing demand and
+                                satisfied customers.</li>
+                            <li><span class="fit-icon">✓</span> Healthy margins capable of supporting paid-ad testing
+                                and a management fee.</li>
+                            <li><span class="fit-icon">✓</span> Capacity to fulfill additional demand without
+                                breaking what already works.</li>
+                            <li><span class="fit-icon">✓</span> A team ready to respond quickly to new leads and
+                                enquiries.</li>
+                            <li><span class="fit-icon">✓</span> Ambition to build a predictable, scalable acquisition
+                                channel instead of relying on luck.</li>
+                        </ul>
+                    </div>
+
+                    <div class="fit-card negative">
+                        <h3>NOT Built For:</h3>
+                        <ul class="fit-list">
+                            <li><span class="fit-icon">✕</span> Unproven ideas or concepts without evidence of real
+                                market demand.</li>
+                            <li><span class="fit-icon">✕</span> Owners looking for overnight results without the
+                                patience to test and learn.</li>
+                            <li><span class="fit-icon">✕</span> Businesses that take hours to respond to new leads
+                                from ad campaigns.</li>
+                            <li><span class="fit-icon">✕</span> Businesses expecting advertising to fix a product,
+                                pricing, or fulfillment problem underneath it.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: How We Work -->
+        <section class="pricing-section section-padding" id="how-we-work">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 class="section-title">How We Work</h2>
+                    <p class="section-description">No fixed packages here; every engagement starts with
+                        understanding the business, whether it comes to us directly or through a partner. Here's
+                        the shape it usually takes.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Discovery -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Discovery & Diagnosis</h3>
+                            <p class="pricing-subtitle">Before any campaign, we understand what the business sells,
+                                who buys it, and whether paid advertising is actually the right lever.</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="pricing-features">
+                                <li>Business, offer & customer review</li>
+                                <li>Current acquisition channels assessed</li>
+                                <li>Honest recommendation on fit</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Strategy -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Strategy & Setup</h3>
+                            <p class="pricing-subtitle">We build the audience, offer, creative direction, and
+                                conversion path before any money goes behind a campaign.</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="pricing-features">
+                                <li>Audience & offer architecture</li>
+                                <li>Creative direction & ad copy</li>
+                                <li>Tracking & conversion path setup</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Launch -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Launch, Test & Optimize</h3>
+                            <p class="pricing-subtitle">Campaigns go live under controlled testing, then get cut or
+                                scaled based on what the data shows.</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="pricing-features">
+                                <li>Controlled campaign launch</li>
+                                <li>Creative & audience testing</li>
+                                <li>Ongoing optimization & reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="pricing-note">
+                    Scope and fees depend on the business, channels, and campaign complexity; we quote
+                    transparently after the first conversation, and partner arrangements are discussed
+                    separately. Ad spend itself is paid directly to Meta, TikTok, or Google, separate from our
+                    management fee.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section: Partnership Models -->
+        <section class="fit-section section-padding" id="partnership">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 class="section-title">Ways Agencies Can Work With Sigma</h2>
+                    <p class="section-description">Agencies and service providers can use Sigma to add paid
+                        acquisition to what they offer, cover service gaps, and explore additional revenue
+                        opportunities, without building a media-buying team of their own. These are
+                        collaboration models we're open to discussing, not a fixed program.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Referral -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Referral Collaboration</h3>
+                            <p class="pricing-subtitle">You introduce clients who need paid advertising, and Sigma
+                                handles discovery and delivery. Any referral commission would be agreed in
+                                writing.</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="pricing-features">
+                                <li>Client introductions from your team</li>
+                                <li>Sigma-led discovery & delivery</li>
+                                <li>Terms discussed case by case</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- White-label -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>White-Label Delivery</h3>
+                            <p class="pricing-subtitle">Sigma works behind the scenes to deliver campaign setup,
+                                management, and reporting for your clients, with your team leading the
+                                relationship.</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="pricing-features">
+                                <li>Campaign setup & management</li>
+                                <li>Reporting your team can share</li>
+                                <li>Branding and scope agreed upfront</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Joint offers -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Joint Offers</h3>
+                            <p class="pricing-subtitle">Package paid advertising alongside your own services, such
+                                as branding, web design, or social media, as one combined offer for clients.</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="pricing-features">
+                                <li>Bundled with your core services</li>
+                                <li>Clear split of responsibilities</li>
+                                <li>Shaped around each partner</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="pricing-note">
+                    Structure, responsibilities, and any revenue arrangements are discussed and agreed with each
+                    partner before work begins. Nothing here is a confirmed commitment until agreed in writing.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section: About the Founder -->
+        <section class="founder-section section-padding" id="founder">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 class="section-title">The Person Behind The System</h2>
+                    <p class="section-description">Sigma isn't a faceless agency account. Here's who's actually
+                        behind the campaigns.</p>
+                </div>
+
+                <div class="founder-grid">
+                    <div class="founder-photo-wrap">
+                        <img src="data:image/jpeg;base64,PASTE_ORIGINAL_FOUNDER_IMAGE_DATA_HERE"
+                            alt="Joshua Somuvie, Founder of Sigma Advertising" class="founder-photo">
+                    </div>
+
+                    <div class="founder-content">
+                        <h3>Joshua Somuvie</h3> <h4><i>- Founder & Ads Strategist</i></h4>
+                        <br>
+                        <p>I'm Joshua Somuvie, founder of Sigma Advertising. I started this agency because I kept
+                            seeing the same thing: businesses with a real product and real demand, spending money on
+                            ads that were never built to convert, no tracking, no offer strategy, no plan beyond
+                            "post and pray, inshallah..."</p>
+                        <p>My job isn't to run ads. It's to build the system around them, the offer, the targeting,
+                            the creative, and the path a stranger takes from seeing an ad to becoming a paying
+                            customer. Before I recommend a campaign, I look at what's actually happening in your
+                            business. If paid advertising isn't the right move yet, I'll tell you that instead of
+                            selling you one anyway.</p>
+                        <p>Sigma exists to give Nigerian businesses a second, controllable way to acquire customers,
+                            one that doesn't depend on an algorithm's mood or a video going viral. Not more
+                            impressions. More buyers, and a clear line showing where they came from.</p>
+
+                        <div class="social-links">
+                            <a href="https://instagram.com/advertisingbysigma?stkn=MWNhcTQzdmVvamptaw%3D%3D"
+                                target="_blank" rel="noopener" class="btn btn-secondary btn-sm social-btn"
+                                aria-label="Sigma Advertising on Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M12 2.2c3.17 0 3.55.01 4.8.07 1.2.06 2 .25 2.4.42.6.24 1 .53 1.5 1a4.1 4.1 0 0 1 1 1.5c.17.4.36 1.2.42 2.4.06 1.25.07 1.63.07 4.8s0 3.55-.07 4.8c-.06 1.2-.25 2-.42 2.4-.24.6-.53 1-1 1.5a4.1 4.1 0 0 1-1.5 1c-.4.17-1.2.36-2.4.42-1.25.06-1.63.07-4.8.07s-3.55 0-4.8-.07c-1.2-.06-2-.25-2.4-.42a4.1 4.1 0 0 1-1.5-1 4.1 4.1 0 0 1-1-1.5c-.17-.4-.36-1.2-.42-2.4C2.2 15.55 2.2 15.17 2.2 12s0-3.55.07-4.8c.06-1.2.25-2 .42-2.4a4.1 4.1 0 0 1 1-1.5 4.1 4.1 0 0 1 1.5-1c.4-.17 1.2-.36 2.4-.42C8.45 2.2 8.83 2.2 12 2.2zm0 1.8c-3.12 0-3.49 0-4.72.07-1 .04-1.5.2-1.86.33-.47.18-.8.4-1.15.75-.35.35-.57.68-.75 1.15-.13.36-.29.87-.33 1.86C3.12 8.6 3.12 8.97 3.12 12s0 3.4.07 4.63c.04 1 .2 1.5.33 1.86.18.47.4.8.75 1.15.35.35.68.57 1.15.75.36.14.87.3 1.86.34 1.23.06 1.6.07 4.72.07s3.49 0 4.72-.07c1-.04 1.5-.2 1.86-.34.47-.18.8-.4 1.15-.75.35-.35.57-.68.75-1.15.13-.36.29-.87.33-1.86.06-1.23.07-1.6.07-4.63s0-3.4-.07-4.63c-.04-1-.2-1.5-.33-1.86a3.1 3.1 0 0 0-.75-1.15 3.1 3.1 0 0 0-1.15-.75c-.36-.13-.87-.29-1.86-.33C15.49 4 15.12 4 12 4zm0 3.6a4.4 4.4 0 1 1 0 8.8 4.4 4.4 0 0 1 0-8.8zm0 1.8a2.6 2.6 0 1 0 0 5.2 2.6 2.6 0 0 0 0-5.2zm5.6-2a1.03 1.03 0 1 1-2.06 0 1.03 1.03 0 0 1 2.06 0z" />
+                                </svg>
+                                Instagram
+                            </a>
+                            <a href="https://tiktok.com/@advertisingbysigma" target="_blank" rel="noopener"
+                                class="btn btn-secondary btn-sm social-btn" aria-label="Sigma Advertising on TikTok">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M16.6 2h-3.2v13.75a2.73 2.73 0 1 1-2.7-2.73c.2 0 .4.02.6.06V9.76a6.03 6.03 0 1 0 5.3 5.99V8.37a7.6 7.6 0 0 0 4.4 1.4V6.56a4.4 4.4 0 0 1-4.4-4.4V2z" />
+                                </svg>
+                                TikTok
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: FAQ -->
+        <section class="faq-section section-padding" id="faq">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-description">Everything you need to know about working with Sigma, whether
+                        directly or as an agency or service-provider partner.</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How can an agency or service provider work with Sigma?</span>
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We're open to a few collaboration models: referring clients who need paid
+                                advertising, white-label delivery where Sigma works behind your brand, or joint
+                                offers that bundle paid advertising with your own services. The right structure
+                                depends on your clients and how you prefer to work, so we agree it with each
+                                partner individually.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Do you offer referral commissions or white-label pricing?</span>
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>These are arrangements we're willing to discuss rather than a standard published
+                                program. Any commission, partner rate, or revenue split would be set out and agreed
+                                with you in writing before any client work begins.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How much ad spend budget do I need to start?</span>
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We recommend starting with a minimum testing ad spend budget that allows Meta or
+                                TikTok algorithms to gather enough conversion data. During our strategy call, we
+                                calculate your exact minimum ad spend based on your product price and target customer
+                                acquisition cost (CAC).</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Why WhatsApp, a landing page, or something else for conversions?</span>
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>It depends on the business and the customer. For many Nigerian businesses, WhatsApp
+                                still converts leads more reliably than a cold website, but a landing page or
+                                booking flow can outperform it elsewhere. We choose the conversion path based on how
+                                your customers actually buy, not a default template.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How quickly will my campaigns go live?</span>
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Once onboarding is complete, campaign setup, audience research, technical tracking
+                                setup, and ad creative drafting typically takes 5 to 7 business days before official
+                                launch.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Do you guarantee sales or ROAS?</span>
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No honest advertising agency promises guaranteed sales, because ad platforms operate
+                                on auction dynamics and results depend on product demand, customer service speed, and
+                                fulfillment. What we control is the process: a testing framework that shuts down
+                                unprofitable ads quickly and scales winning angles systematically, to protect your
+                                budget.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What if I have never run paid ads before?</span>
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>That is our specialty. We handle everything end-to-end: business manager setup, domain
+                                verification, tracking setup, creative scripting, targeting, and launch. You won't
+                                have to struggle through complex ad dashboards.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How much does working with Sigma cost?</span>
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Management fees depend on scope, the channels involved, campaign complexity, and how
+                                much ongoing management your business needs. We quote this transparently after an
+                                initial conversation about your business. Your ad spend is paid directly to Meta,
+                                TikTok, or Google and is always separate from our fee.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Strategy Call CTA -->
+        <section class="cta-section" id="book-call">
+            <div class="container">
+                <div class="cta-card">
+                    <h2 class="cta-title">Interested in Partnering With Sigma?</h2>
+                    <p class="cta-description">
+                        Start a conversation about how we could work together, whether through referrals,
+                        white-label delivery, or a joint offer. We'll talk through your clients' needs and tell
+                        you honestly whether, and how, paid advertising and a partnership should fit.
+                    </p>
+                    <a href="https://wa.me/2349071283949?text=Hello%20Sigma%20Advertising,%20I%20would%20like%20to%20discuss%20a%20partnership%20between%20Sigma%20and%20my%20agency."
+                        target="_blank" class="btn btn-primary btn-lg">Start a Partnership Conversation on WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+     <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                          <img src="ADVERTISING_20260814_103143_0000(2)[1].png" alt="Sigma Advertising Logo" class="logo-mark">
+                        <span class="logo-mark"></span>
+                        Sigma Advertising
+                    </a>
+                    <p>Paid customer acquisition systems for established Nigerian businesses, e-commerce, services,
+                        and beyond, delivered directly or alongside agency and service-provider partners.</p>
+                </div>
+
+                <div>
+                    <h4 style="margin-bottom: 1rem; font-size: 0.9rem;">Core Capabilities</h4>
+                    <p style="font-size: 0.85rem; line-height: 1.8;">
+                        Meta Ads (FB & IG)<br>
+                        TikTok Ads<br>
+                        Google Search Ads<br>
+                        Conversion Path Strategy<br>
+                        Offer & Positioning Architecture
+                    </p>
+                </div>
+
+                <div>
+                    <h4 style="margin-bottom: 1rem; font-size: 0.9rem;">Ecosystem Partner</h4>
+                    <p style="font-size: 0.85rem; line-height: 1.8;">
+                        Integrates with <strong>DeltaFlow Tech</strong><br>
+                        Automated WhatsApp Sales CRM
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 Sigma Advertising. All rights reserved.</div>
+                <div>Designed for high-intent customer acquisition.</div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Light / Dark Theme Toggle Logic
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const htmlElement = document.documentElement;
+
+        // Check Local Storage or System Preference
+        const savedTheme = localStorage.getItem('sigma-theme') ||
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+        setTheme(savedTheme);
+
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            setTheme(newTheme);
+        });
+
+        function setTheme(theme) {
+            htmlElement.setAttribute('data-theme', theme);
+            localStorage.setItem('sigma-theme', theme);
+            themeIcon.textContent = theme === 'dark' ? '☼' : '☾';
+        }
+
+        // Accordion Interactive Logic for FAQ
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+
+                // Close all other FAQ items
+                faqItems.forEach(otherItem => otherItem.classList.remove('active'));
+
+                // Toggle clicked item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
